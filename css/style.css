@@ -1,0 +1,302 @@
+:root {
+    --bgcolor: #353a40;
+    --textcolor: white;
+    --bgboton: #29A744;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5em;
+}
+
+header {
+    background-color: var(--bgcolor);
+    height: 4.6em;
+    width: 100%;
+    color: var(--textcolor);
+
+    .logo {
+        display: inline-block;
+
+        & img {
+            height: 4em;
+            vertical-align: middle;
+            margin-left: 2em
+        }
+
+        & h2 {
+            display: inline-block;
+        }
+
+    }
+
+    & nav {
+        float: right;
+        text-align: right;
+        padding: 1.5em 2em;
+
+        & a {
+            text-decoration: none;
+            color: var(--textcolor);
+            margin: 0 .5em;
+        }
+
+        .tickets {
+            color: var(--bgboton);
+        }
+    }
+}
+
+/* Imagenes Main */
+main {
+    .Principal {
+        position: relative;
+        width: 100%;
+        & img {
+            filter: brightness(0.5);
+            height: 90vh;
+            width: 100%;
+            
+        }
+        .textop {
+            position: absolute;
+            top: 50vh;
+            text-align: right;
+            width: 60%;
+            right: 4em;
+            color: var(--textcolor);
+            & h1{
+                font-size: large;
+            }
+            & p {
+                margin: 2em 0.5em;
+            }
+            & a {
+                border: 1px solid var(--textcolor);
+                border-radius: 5px;
+                text-decoration: none;
+                padding: 10px 10px;
+                color: white;
+            }
+            & .btndecolor {
+                border: 1px solid var(--bgboton);
+                background-color: var(--bgboton);
+            }
+        }
+    }
+}
+/* Imagenes Main */
+
+
+/* Tarjetas */
+.GridContenido {
+    display: grid;
+    grid-template-areas: "Orador Orador";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+    & h4,h2 {
+        text-align: center;
+    }
+
+    .It-1{
+        grid-area: Orador;
+        padding: 20px 10px;
+        
+        .Contenido-Tarjeta{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            margin: 20px 0px;
+            border-radius: 15px;
+            
+            .tarjeta-1{
+                width: 350px;
+                border: 2px solid rgba(164,164,164,0.41);
+                border-radius: 15px;
+                box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+                & img {
+                   width: 100%;
+                   border-radius: 15px;
+                }
+            }
+            .tarjeta-2{
+                width: 350px;
+                border: 1px solid rgba(164,164,164,0.41);
+                border-radius: 15px;
+                box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+                & img {
+                   width: 100%;
+                   border-radius: 15px;
+                }
+            }
+            .tarjeta-3 {
+                width: 350px;
+                border: 1px solid rgba(164,164,164,0.41);
+                border-radius: 15px;
+                box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+                & img {
+                   width: 100%;
+                   border-radius: 15px;
+                }
+            }
+            .java{
+                text-decoration: none;
+                padding: 2px 2px;
+                background-color: yellow;
+                border: 1px solid yellow;
+                border-radius: 5px; 
+            }
+            .React{
+                text-decoration: none;
+                padding: 2px 2px;
+                background-color: rgb(0, 221, 255);
+                border: 1px solid rgb(0, 221, 255);
+                border-radius: 5px; 
+                color: var(--textcolor);
+            }
+            .Starups{
+                text-decoration: none;
+                padding: 2px 2px;
+                background-color: rgb(255, 0, 0);
+                border: 1px solid rgb(255, 0, 0);
+                border-radius: 5px; 
+                color: var(--textcolor);
+            }
+            .Negocios{
+                text-decoration: none;
+                padding: 2px 2px;
+                background-color: rgb(119, 119, 119);
+                border: 1px solid rgb(118, 118, 118);
+                border-radius: 5px; 
+                color: var(--textcolor);
+            }
+        }
+    }
+/* Tarjetas */
+
+/* Paisaje */
+.paisaje{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 20px 0px;
+    border-radius: 15px;
+    
+   
+    }
+    .It-2{
+         grid-area: Paisaje;
+         order: 1;
+         & img {
+            width: 50vw;
+            height: 70vh;
+            border: 2px solid var(--textcolor);
+        }
+    }    
+    .It-3{
+        order: 2;
+        width: 47vw;
+        height: 70vh;
+        background-color: var(--bgcolor);
+        color: var(--textcolor);
+        padding: 1em;
+        border: 2px solid var(--textcolor);
+        & a{
+            text-decoration: none;
+            color: var(--textcolor);
+            padding: 10px 10px;
+            border: 2px solid var(--textcolor);
+            border-radius: 5px;
+        }
+    }
+    /* Paisaje */
+    /* Formulario */
+    .FormTitulo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .Formulario{
+        text-align: center;
+        border: none;
+        padding: 1rem;
+    }
+
+}
+    /* Formulario */
+    footer{
+        background-color: cadetblue;
+        height: 6em;
+        width: 100vw;
+        
+        & nav {
+            text-align: center;
+            justify-content: space-evenly;
+            padding: 1em 2em;
+    
+    
+            & a {
+                text-decoration: none;
+                color: var(--textcolor);
+                margin: 2em .5em;
+            }
+        }
+    }
+
+@media screen and (max-width: 700px){
+    .header{
+        height: 20rem;
+        width: 100%;
+        align-items: left;
+        
+    }
+
+.logo{background-color: #353a40;
+text-align: left;}    
+
+& .textop{
+    margin: -12rem auto;
+    height: 20rem;
+    
+   & p{
+        width: 80%;
+        top: 58vh;}
+   & a{
+        display: grid;
+        padding: 5px 10px;
+    } 
+    .It-3{
+        & img{
+            width: 100vw;
+        }
+    }
+ }  
+
+   .paisaje {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px -10px;
+    border-radius: 15px;
+    justify-content: space-evenly;
+    .It-2 {
+        height: 50vh;
+        width: 100vw;
+        & img {
+            width: 100vw;height: 50vh;
+        }
+    }
+    
+    .It-3 {
+        width: 100vw;
+        height: 60vh;}
+
+   
+    
+
+
+}}
+    
