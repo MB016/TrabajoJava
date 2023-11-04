@@ -1,0 +1,117 @@
+:root {
+    --bgcolor: #353a40;
+    --textcolor: white;
+    --bgboton: #29A744;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5em;
+}
+
+header {
+    background-color: var(--bgcolor);
+    height: 4.6em;
+    width: 100%;
+    color: var(--textcolor);
+
+    .logo {
+        display: inline-block;
+
+        & img {
+            height: 4em;
+            vertical-align: middle;
+            margin-left: 2em
+        }
+
+        & h2 {
+            display: inline-block;
+        }
+
+    }
+
+    & nav {
+        float: right;
+        text-align: right;
+        padding: 1.5em 2em;
+
+        & a {
+            text-decoration: none;
+            color: var(--textcolor);
+            margin: 0 .5em;
+        }
+
+        .tickets {
+            color: var(--bgboton);
+        }
+    }
+}
+
+grid-container{
+    border: 1px solid red;
+    display: grid;
+    grid-template-areas:"opciones"
+                        "formulario"    
+}
+
+.Opciones{
+    grid-area: "opciones";
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 30vh;
+    vertical-align: middle;
+
+    & p {color: #63666a;}
+
+    & .Box1,.Box2,.Box3{text-align: center;
+    margin: 20px 2px;
+    padding: 15px 10px;}
+}
+.Box1{
+    border: 2px solid rgb(110, 110, 215);
+}
+.Box2{
+    border: 2px solid rgb(109, 184, 231);
+}
+.Box3{
+    border: 2px solid rgb(212, 212, 138);;
+}
+
+
+
+.formulario{
+    grid-area: "formulario";
+    height: 50vh;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: cadetblue;
+    height: 6em;
+    width: 100vw;
+    
+    & nav {
+        text-align: center;
+        justify-content: space-evenly;
+        padding: 1em 2em;
+
+
+        & a {
+            text-decoration: none;
+            color: var(--textcolor);
+            margin: 2em .5em;
+        }
+    }
+}

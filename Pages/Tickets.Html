@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style-tickets.css">
+    <title>Tickets</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../Assets/img/codoacodo.png" alt="">
+            <h2>Conf Bs As</h2>
+        </div>
+        <nav>
+            <a href="#">La conferencia</a>
+            <a href="#oradores">Los oradores</a>
+            <a href="#lugar">El lugar y la fecha</a>
+            <a href="#conviertete">Conviértete en orador</a>
+            <a class="ticket" href="./Pages/Tickets.Html">Comprar tickets</a>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        </nav>
+    </header>
+
+    <body>
+        <div class="grid-container">
+            <div class="Opciones">
+                <div class="Box1">
+                    <h3>Estudiante</h3>
+                    
+                    <h6>Tienen un descuento </h6>
+                    <br>
+                    <h4>80%</h4>
+                    <br>
+                    <p>*presentar documentacion</p>
+                    
+
+                </div>
+                <div class="Box2">
+                    <h3>Trainee</h3>
+                 
+                    <h6>Tienen un descuento </h6>
+                    <br>
+                    <h4>50%</h4>
+                    <br>
+                    <p>*presentar documentacion</p>
+
+                </div>
+                <div class="Box3">
+                    <h3>Junior</h3>
+                   
+                    <h6>Tienen un descuento </h6>
+                    <br>
+                    <h4>15%</h4>
+                    <br>
+                    <p>*presentar documentacion</p>
+
+                </div>
+
+
+
+            </div>
+            <div class="formulario">
+                <section>
+                    <h6 class="text-center">Venta</h6>
+                    <h1 class="text-center">VALOR DE TICKET $200</h1>
+                    <form action="" class="container-fluid" style="width: 63%">
+                        <div class="row mb-4">
+                            <div class="col">
+                                <input id="Nombre" name="Nombre" type="text" class="form-control"
+                                    placeholder="First name" aria-label="First name" required>
+                            </div>
+                            <div class="col">
+                                <input id="apellido" type="text" class="form-control" placeholder="Last name"
+                                    aria-label="Last name" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input id="mail" type="email" class="form-control" placeholder="name@example.com" required>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="Cantidad">Cantidad de entradas</label>
+                                <input id="Cantidad" type="number" class="form-control" placeholder="">
+                            </div>
+                            <div class="col">
+                                <label for="Categoria">Categoría</label>
+                                <select id="Categoria" class="form-select" aria-label="Default select example">
+                                    <option selected="">--Seleccione--</option>
+                                    <option value="0">Sin Categoria</option>
+                                    <option value="1">Estudiante</option>
+                                    <option value="2">Trainee</option>
+                                    <option value="3">Junior</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="alert alert-primary" role="alert">
+                            Total a pagar:$ <span id="TotalPagar"></span>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="d-grid col-6 mx-auto;">
+                                <button class="btn btn-success" id="btnClear" type="reset">Borrar</button>
+                            </div>
+                            <div class="d-grid col-6 mx-auto">
+                                <button class="btn btn-success" id="BotonResumen" type="button">Resumen</button>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+
+                    </form>
+                </section>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <nav class="Final">
+            <a href=""> Preguntas Frecuentes</a>
+            <a href="">Contactanos</a>
+            <a href="">Prensa</a>
+            <a href="">Conferencias</a>
+            <a href="">Terminos y condiciones</a>
+            <a href="">Privacidad</a>
+            <a href="">Estudiantes</a>
+        </nav>
+
+    </footer>
+
+    <script src="../js/js.js"></script>
+</body>
+
+</html>
